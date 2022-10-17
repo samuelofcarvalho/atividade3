@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Atributo Name</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<meta charset="utf-8">
+<style>
+div.title {
+text-align: center;
+font-family: Helvetica, Century Gothic, Consolas, Franklin Gothic;
+font-size: 18;
+position: relative;
+top: 10px;
+}
+
+div.p {
+text-align: left;
+font-family: Segoi UI, Tahoma, Arial;
+font-size: 12;
+position: relative;
+left: 10px;
+top: 20px;
+}
+
+p {
+font-size: 17px;
+}
+
+</style>
+
+<div class="title">
+<h1>Atividade 3</h1>
+<p>Por Samuel Carvalho</p>
+</div>
+
+<div class="p">
+
+<h2>Atributo "name":</h2>
+<p>O atributo "name" determina um nome para o elemento HTML. Ele pode ser usado para fazer referência ao elemento usando JavaScript.
+Segue o exemplo abaixo usando o método 'getElementsByName()'</p>
+
+<p>
+  <label for="name">Seu nome:</label>
+  <input type="text" id="nameid" name="nome" placeholder="Escreva aqui"><br><br>
+  <button id="submit" onClick="validate()">Enviar</button>
+</p>
+
+<p id="output"></p>
+
+<p id="expl"></p>
+</div>
+
+<script type="text/javascript">
+
+function validate(){
+document.getElementById('expl').innerText='O método getElementsByName retorna uma coleção de elementos com o nome especificado. Ele retorna esse valor como uma NodeList: uma array (matriz) de nodes';
+
+var result = document.getElementsByName('nome');
+document.getElementById('output').innerText='Seu nome é: '+result[0].value;
+}
+
+</script>
+
+</body>
+</html
