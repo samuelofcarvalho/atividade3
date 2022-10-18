@@ -37,7 +37,12 @@ font-size: 17px;
 <div class="p">
 
 <h2>Atributo "enctype":</h2>
-  <p> O atributo enctype serve para definir o tipo de codificação com que os dados serão enviados.</p><br>
+  <p> O atributo enctype serve para definir o tipo de codificação com que os dados serão enviados.
+  </p><br>
+  <p>application/x-www-form-urlencoded: Todos os caracteres são codificados antes do envio
+    (os espaços são convertidos em símbolos "+" e os caracteres especiais são convertidos em valores ASCII HEX)</p><br>
+    <p>multipart/form-data: Este valor é necessário se o usuário fizer upload de um arquivo através do formulário</p><br>
+    <p>text/plain: Envia dados sem qualquer codificação. Geralmente náo recomendado.</p>
     <form action="#" method="post" enctype="multipart/form-data">
       Primeiro Nome: <input type="text" name="fname"><br>
       Último Nome: <input type="text" name="lname"><br>
@@ -45,4 +50,4 @@ font-size: 17px;
     </form>
 </div>
 </body>
-</html
+</html>
